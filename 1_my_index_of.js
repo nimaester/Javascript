@@ -13,12 +13,12 @@ myIndexOf(["a", "b", "c"], "d") => -1
 
 function myIndexOf(array, ele){
   // your code here...
-  for (let i = 0; i < array.length; i ++) {
-    if (array[i] === ele) {
-      return i;
+  let result = array.forEach(function(item, index) {
+    if (item === ele) {
+      return index;
     }
-  }
-  return -1;
+  })
+  return - 1
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
